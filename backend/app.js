@@ -12,7 +12,7 @@ const PORT = process.env.PORT || 3000;
 
 app.use(cors(
   {
-    origin: ["https://fast-lane-ivory.vercel.app/"],
+    origin: ["https://fast-lane-frontend.vercel.app/"],
     methods: ["POST", "GET"],
     credentials: true
   }  
