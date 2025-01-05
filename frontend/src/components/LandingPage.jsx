@@ -20,7 +20,7 @@ const LandingPage = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/cars")
+      .get("https://fast-lane-ivory.vercel.app/api/cars")
       .then((response) => {
         const allCars = response.data;
 
@@ -119,7 +119,7 @@ const LandingPage = () => {
             <div className="col-lg-3 col-md-6" key={index}>
               <div className="card h-100">
                 <img
-                  src={`http://localhost:3000/${car.images[0]}`}
+                  src={`https://fast-lane-ivory.vercel.app/${car.images[0]}`}
                   className="card-img-top"
                   alt={car.model}
                 />
