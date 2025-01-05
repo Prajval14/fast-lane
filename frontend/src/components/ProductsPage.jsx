@@ -16,7 +16,7 @@ const ProductsPage = () => {
   // Fetch cars from the API when the component mounts
   useEffect(() => {
     axios
-      .get("http://localhost:3000/api/cars")
+      .get("https://fast-lane-ivory.vercel.app/api/cars")
       .then((response) => {
         setCars(response.data);
         setFilteredCars(response.data); // Initially show all cars
@@ -99,7 +99,7 @@ const ProductsPage = () => {
             <div className="col-md-3" key={index}>
               <div className="card shadow-sm border-0">
                 <img
-                  src={`http://localhost:3000/${car.images[0]}`}
+                  src={`https://fast-lane-ivory.vercel.app/${car.images[0]}`}
                   className="card-img-top"
                   alt={car.model}
                 />
