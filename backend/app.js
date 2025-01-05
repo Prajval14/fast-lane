@@ -33,9 +33,9 @@ mongoose.connect('mongodb+srv://prajval1420:znDPSV3LU3wjC64m@cluster0.opwfq.mong
 
 // Routes
 //app.use('/api/cars', carRoutes);
-app.get("/", (req,res) => {
-  res.json("Hello");
-})
+app.get("/", (req, res) => {
+  res.status(200).send("Hello from Express!");
+});
       
 // Starting the server
 app.listen(PORT, () => {
