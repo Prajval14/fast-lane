@@ -1,0 +1,72 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Navbar styles */
+  .navbar img {
+    max-height: 80px;
+  }
+  
+  /* Hero Section */
+  .row1_col1 h2 {
+    font-size: 50px;
+  }
+  
+  .row1_col1 h1 {
+    font-size: 60px;
+  }
+  
+  .row1_col2 {
+    background-color: #EAEBF0;
+    padding: 20px 0;
+  }
+  
+  /* Line style for headings */
+  .line {
+    width: 30%;
+    height: 1px;
+    background-color: #ccc;
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  /* Card Styles */
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .card {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: none;
+  }
+  
+  /* Contact Section */
+  iframe {
+    border: 0;
+  }
+  
+  @media (max-width: 768px) {
+    .row1_col1 h2,
+    .row1_col1 h1 {
+      font-size: 30px;
+    }
+  
+    .line {
+      width: 20%;
+    }
+  
+    .card-img-top {
+      height: 150px;
+    }
+  
+    iframe {
+      height: 300px;
+    }
+
+    .ev-button {
+        margin-bottom: 40px;
+    }
+  }
+  
