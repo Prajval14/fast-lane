@@ -32,8 +32,11 @@ mongoose.connect('mongodb+srv://prajval1420:znDPSV3LU3wjC64m@cluster0.opwfq.mong
 });
 
 // Routes
-app.use('/api/cars', carRoutes);
-
+//app.use('/api/cars', carRoutes);
+app.get("/", (req,res) => {
+  res.json("Hello");
+})
+      
 // Starting the server
 app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}`);
