@@ -1,7 +1,7 @@
 {
   "version": 2,
   "builds": [
-    { "src": "*.js", "use": "@vercel/go" }
+    { "src": "*.js", "use": "@vercel/node" }
   ],
   "routes": [
     {
