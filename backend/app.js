@@ -10,13 +10,19 @@ const carRoutes = require('./routes/carRoutes');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-app.use(cors());
+app.use(cors(
+  {
+    origin: [""],
+    methods: ["POST", "GET"],
+    credentials: true
+  }  
+));
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
 app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://prajval1420:znDPSV3LU3wjC64m@cluster0.opwfq.mongodb.net/carDealership', {
+mongoose.connect('mongodb+srv://prajval1420:znDPSV3LU3wjC64m@cluster0.opwfq.mongodb.net/carDealership?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true
 }).then(() => {
