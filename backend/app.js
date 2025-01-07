@@ -33,9 +33,9 @@ mongoose.connect('mongodb+srv://prajval1420:znDPSV3LU3wjC64m@cluster0.opwfq.mong
 app.use('/api/cars', carRoutes);
 
 // Root endpoint
-app.get('/', (req, res) => {
-  res.send('Welcome to my Node.js app deployed on Vercel!');
-});
+// app.get('/', (req, res) => {
+//   res.send('Welcome to my Node.js app deployed on Vercel!');
+// });
       
 // Starting the server
 app.listen(PORT, () => {

@@ -2,6 +2,7 @@ const Car = require('../models/carModel');
 
 // Get all cars
 exports.getAllCars = async (req, res) => {
+    console.log('1');
     try {
         const cars = await Car.find({});
         res.status(200).json(cars);
